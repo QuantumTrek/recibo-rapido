@@ -266,6 +266,52 @@ theme_override = (
                 radial-gradient(circle at top left, rgba(14, 165, 164, 0.12), transparent 30rem),
                 radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.10), transparent 28rem),
                 #f8fafc !important;
+            color: #17313b;
+        }
+        [data-testid="stHeader"] {
+            background: rgba(248, 250, 252, 0.88);
+        }
+        [data-testid="stForm"] {
+            background: rgba(255, 255, 255, 0.82);
+            border-color: rgba(15, 118, 110, 0.18);
+            box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+        }
+        h1, label, [data-testid="stMarkdownContainer"] p {
+            color: #17313b !important;
+        }
+        .subtitle {
+            color: #527083 !important;
+        }
+        div[data-baseweb="input"] input,
+        div[data-baseweb="textarea"] textarea,
+        div[data-baseweb="select"] > div {
+            background-color: #ffffff !important;
+            color: #17313b !important;
+            border-color: #cde9e5 !important;
+        }
+        div[data-baseweb="input"] input::placeholder,
+        div[data-baseweb="textarea"] textarea::placeholder {
+            color: #78909c !important;
+            opacity: 1 !important;
+        }
+        div[data-testid="stFormSubmitButton"] button,
+        div[data-testid="stDownloadButton"] button,
+        div[data-testid="stLinkButton"] a {
+            background: linear-gradient(135deg, #0f766e, #164e63) !important;
+            border: 1px solid rgba(15, 118, 110, 0.35) !important;
+            color: #ffffff !important;
+            font-weight: 700;
+        }
+        div[data-testid="stFormSubmitButton"] button *,
+        div[data-testid="stDownloadButton"] button *,
+        div[data-testid="stLinkButton"] a * {
+            color: #ffffff !important;
+        }
+        div[data-testid="stFormSubmitButton"] button:hover,
+        div[data-testid="stDownloadButton"] button:hover,
+        div[data-testid="stLinkButton"] a:hover {
+            background: linear-gradient(135deg, #14b8a6, #0f766e) !important;
+            border-color: #0f766e !important;
         }
     """
 )
